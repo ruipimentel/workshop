@@ -7,3 +7,5 @@
   bundle install
   rails s
 ```
+
+Vai timão !!!
