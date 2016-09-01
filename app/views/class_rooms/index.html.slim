@@ -1,0 +1,17 @@
+.row
+  .col-md-12
+    .page-header
+      h1 Turmas
+
+.row
+  - @courses.each do |course|
+    .col-md-6
+      .panel.panel-default
+        .panel-heading
+          = course.name
+        .panel-body
+          ul
+            - course.students.each do |student|
+              li
+                = student.name
+

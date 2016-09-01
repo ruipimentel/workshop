@@ -1,0 +1,9 @@
+.row
+  .col-md-12
+    p = "Estudante: #{@student.name}"
+    p = "Registro:  #{@student.register_number}"
+
+
+    = link_to 'Editar', edit_student_path(@student)
+    '|
+    = link_to 'Voltar', students_path

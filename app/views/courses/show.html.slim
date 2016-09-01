@@ -1,0 +1,9 @@
+.row
+  .col-md-12
+    p = "Curso: #{@course.name}"
+    p = "Descrição: #{@course.description}"
+
+   
+    = link_to 'Editar', edit_course_path(@course)
+    '|
+    = link_to 'Voltar', courses_path

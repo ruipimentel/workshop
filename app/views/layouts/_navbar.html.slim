@@ -1,0 +1,13 @@
+nav.navbar.navbar-inverse
+  .container-fluid
+    .navbar-header
+      = link_to 'Site', root_path, { class: 'navbar-brand' }    
+    .collapse.navbar-collapse
+      ul.nav.navbar-nav
+        li
+          = link_to 'Estudantes', students_path
+        li
+          = link_to 'Cursos', courses_path
+        li
+          = link_to 'Turmas', class_rooms_path
+      
